@@ -13,6 +13,7 @@ A modern Next.js starter template with a comprehensive set of features and tools
 - 📝 Form handling with React Hook Form and Zod validation
 - 🎉 Toast notifications with Sonner
 - 📱 Mobile-first responsive design
+- 🔍 SEO optimization with Next SEO
 
 ## Getting Started
 
@@ -64,6 +65,33 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Development Tools
 - ESLint for code linting
 - PostCSS for CSS processing
+
+## SEO Configuration
+
+This starter includes Next SEO for advanced Search Engine Optimization. It provides:
+
+- Custom title templates
+- Default meta tags
+- OpenGraph metadata
+- Twitter cards
+- Canonical URLs
+
+The SEO configuration is centralized in `lib/next-seo.config.js`. You can customize:
+
+```js
+titleTemplate: '%s | Your Site Name'
+defaultTitle: 'Your Site Name'
+description: 'Your site description'
+canonical: 'https://your-domain.com'
+openGraph: {
+  // Social media sharing metadata
+}
+twitter: {
+  // Twitter card metadata
+}
+```
+
+The SEO wrapper is automatically applied to all pages through `lib/next-seo-wrapper.jsx`.
 
 ## Project Structure
 
